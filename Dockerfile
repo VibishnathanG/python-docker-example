@@ -5,7 +5,6 @@ LABEL appname="pyapp"
 RUN chmod -R 777 /pyapp
 RUN useradd -m vibish
 USER vibish
-COPY sample1.txt /tmp/
 WORKDIR /pyapp
 RUN git clone https://github.com/VibishnathanG/python-docker-example.git
 WORKDIR python-docker-example
